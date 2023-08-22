@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<title>HomePage</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bodyLD">
+       
+        <div class="h1" >  
+            
+            <h1><span id="greetSpan">Dobré ráno</span>, dnes <span>je letovo</span> !</h1>
+        </div>
+        
+        <div class="inputs">
+            <label for="input1">Dátum</label>
+            <input name="input1" type="date" id="input1">
+            
+            <label for="input2">Štartovačka</label>
+            <input name="input2" type="text" id="input2">
+      
+            <label for="input3">Čas vzletu</label>
+            <input name="input3" type="text" id="input3">
+      
+            <label for="input4">Poznámka</label>
+            <input name="input4" type="text" id="input4">
+      
+            <label for="input5">Trvanie letu</label>
+            <input name="input5" type="text" id="input5">
+            
+            <button type="button" onclick="addRow()">sub</button>
+          </div>
+    
+          <table id="myTable">
+        <caption>Preletový Denník</caption>
+        <tr>
+            <th scope="col">Dátum</th>
+            <th scope="col">Štartovačka</th>
+            <th scope="col">Čas vzletu</th>
+            <th scope="col">Poznámka</th>
+            <th scope="col">Trvanie letu</th>
+            
+        </tr>
+        <tr>
+            <td>15.9.2021</td>
+            <td>Donovaly</td>
+            <td>14:55</td>
+            <td></td>
+            <td>0:35</td>
+            
+        </tr>
+        <tr>
+            <td>26.9.2021</td>
+            <td>Baba</td>
+            <td>15:45</td>
+            <td></td>
+            <td>0:15</td>
+            
+        </tr>
+        <tr>
+            <td>17.10.2021</td>
+            <td>Kľak</td>
+            <td>15:00</td>
+            <td>Jesenná termika</td>
+            <td>0:40</td>
+            
+        </tr>
+  </table>
+ 
+    </div>
+    <p id="main"></p>
+    <script type="module" src="denik.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="denik.js"></script>
+</body>

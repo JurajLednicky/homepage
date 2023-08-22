@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<title>HomePage</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    
+</head>
+<body id="bodyID">
+
+  <div class="wrapper">   
+        <div class="h1" >  
+          <h1><span id="greetSpan">Good morning</span>, today <span id="flyable?">is flyable</span>. <span id="startovacka"></span></h1>
+        </div>      
+       
+     <!--- <div class="form">
+       <form CLASS="googleForm" method="GET" >
+            <label class="labelG" for="inputG">Ask ChatGPT</label>
+            <input class="inputGClass" id="inputG" name="inputG" type="text" >
+            <input id="submitG" type="button" value="submit" >
+        </form>
+    
+       </div>     -->
+     
+       <div class="optionWrapper">
+       <div class="option" id="divIdWindy"><a href="https://www.windy.com/?49.195,18.196,5,m:fcZagtY" class="optionA" target="_blank"></a></div> 
+       <div class="option" id="divIdHZS"><a href="https://meteo.hzs.sk" class="optionA" target="_blank"></a></div>
+       <div class="option" id="divIdXcmeteo"><a href="http://www.xcmeteo.net" class="optionA" target="_blank"></a></div>
+       <div class="option" id="divIdSHMU"><a href="https://www.shmu.sk/sk/?page=479&id=&mesto=Zilina" class="optionA" target="_blank"></a></div>
+       <div class="option" id="divIdXc"><a href="https://www.xcontest.org/slovakia/prelety/denne-skore/" class="optionA" target="_blank"></a></div>
+       <div class="option" id="divIdMB"><a href="https://www.meteoblue.com/sk/po%C4%8Dasie/t%C3%BD%C5%BEde%C5%88/stran%c3%adk_slovensk%c3%a1-republika_3057428" class="optionA" target="_blank"></a></div>
+       <div class="option" id="divIdCam"><a href="http://meteo.fatracom.com/" class="optionA" target="_blank"></a></div>
+       <div class="option" id="divIdMapy"><a href="https://www.mapy.cz" class="optionA" target="_blank"></a></div>
+       <div class="option" id="divIdGm"><a href="https://www.gmail.com" class="optionA" target="_blank"></a></div>
+       <div class="option" id="divIdMF"><a href="https://www.mountain-forecast.com/peaks/Strazov-Slovakia/forecasts/1213" class="optionA" target="_blank"></a></div>
+       <div class="option" id="divIdLD"><a href="letovyDennik.html" class="optionA" target="_blank"></a></div>
+     </div>  
+
+     
+  
+     <div class="selectorDiv">
+    <form id="formLoc" action="">
+      <label for="changeLoc"></label>
+    <select name="changeLoc" id="changeLoc" onchange="this.form.submit()">
+      <option value="1">Malé Lednice</option>
+      <option value="2">Baba</option>
+      <option value="3">Straník</option>
+      <option value="4">Donovaly</option> 
+      <option value="5">Martinské Hole</option> 
+      <option value="6">Horná Súča</option> 
+      <option value="7">Čipčie</option>
+    </select>
+  </form>
+  
+  </div>
+    <div class="footer"> 
+      
+      <button id="tableSwitchP"><i class="fas fa-clock"></i></i></button>
+      <table id="table1">
+        <thead> 
+          <tr>
+          <th class="tHeader" colspan="14">Today</th>
+          </tr>
+          <tr>
+            <th>Alt.</th>
+            <th></th>
+            <th>09:00</th>
+            <th>10:00</th>
+            <th>11:00</th>
+            <th>12:00</th>
+            <th>13:00</th>
+            <th>14:00</th>
+            <th>15:00</th>
+            <th>16:00</th>
+            <th>17:00</th>
+            <th>18:00</th>
+            <th>19:00</th>
+            <th>20:00</th>            
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tRow1">
+            <td id="500m" rowspan="2">500m</td>
+            <td>m/s</td>
+            <td id="WS50008"></td>            
+            <td id="WS50010"></td>
+            <td id="WS50011"></td>
+            <td id="WS50012"></td>
+            <td id="WS50013"></td>
+            <td id="WS50014"></td>
+            <td id="WS50015"></td>
+            <td id="WS50016"></td>
+            <td id="WS50017"></td>
+            <td id="WS50018"></td>
+            <td id="WS50019"></td>
+            <td id="WS50020"></td>
+          </tr>
+          <tr>
+            <td>deg°</td>
+            <td id="WD50008"></td>
+            <td id="WD50010"></td>
+            <td id="WD50011"></td>
+            <td id="WD50012"></td>
+            <td id="WD50013"></td>
+            <td id="WD50014"></td>
+            <td id="WD50015"></td>
+            <td id="WD50016"></td>
+            <td id="WD50017"></td>
+            <td id="WD50018"></td>
+            <td id="WD50019"></td>
+            <td id="WD50020"></td>
+          </tr>
+          <tr class="tRow1">
+            <td id="800m" rowspan="2">800m</td>
+            <td>m/s</td>
+            <td id="WS80008"></td>
+            <td id="WS80010"></td>
+            <td id="WS80011"></td>
+            <td id="WS80012"></td>
+            <td id="WS80013"></td>
+            <td id="WS80014"></td>
+            <td id="WS80015"></td>
+            <td id="WS80016"></td>
+            <td id="WS80017"></td>
+            <td id="WS80018"></td>
+            <td id="WS80019"></td>
+            <td id="WS80020"></td>
+          </tr>
+          <tr>
+            <td>deg°</td>
+            <td id="WD80008"></td>
+            <td id="WD80010"></td>
+            <td id="WD80011"></td>
+            <td id="WD80012"></td>
+            <td id="WD80013"></td>
+            <td id="WD80014"></td>
+            <td id="WD80015"></td>
+            <td id="WD80016"></td>
+            <td id="WD80017"></td>
+            <td id="WD80018"></td>
+            <td id="WD80019"></td>
+            <td id="WD80020"></td>
+          </tr>
+          <tr class="tRow1">
+            <td id="1000m" rowspan="2">1000m</td>
+            <td>m/s</td>
+            <td id="WS100008"></td>
+            <td id="WS100010"></td>
+            <td id="WS100011"></td>
+            <td id="WS100012"></td>
+            <td id="WS100013"></td>
+            <td id="WS100014"></td>
+            <td id="WS100015"></td>
+            <td id="WS100016"></td>
+            <td id="WS100017"></td>
+            <td id="WS100018"></td>
+            <td id="WS100019"></td>
+            <td id="WS100020"></td>
+          </tr>
+          <tr>
+            <td>deg°</td>
+            <td id="WD100008"></td>
+            <td id="WD100010"></td>
+            <td id="WD100011"></td>
+            <td id="WD100012"></td>
+            <td id="WD100013"></td>
+            <td id="WD100014"></td>
+            <td id="WD100015"></td>
+            <td id="WD100016"></td>
+            <td id="WD100017"></td>
+            <td id="WD100018"></td>
+            <td id="WD100019"></td>
+            <td id="WD100020"></td>
+          </tr>
+          <tr class="tRow1">
+            <td id="1500m" rowspan="2">1500m</td>
+            <td>m/s</td>
+            <td id="WS150008"></td>
+            <td id="WS150010"></td>
+            <td id="WS150011"></td>
+            <td id="WS150012"></td>
+            <td id="WS150013"></td>
+            <td id="WS150014"></td>
+            <td id="WS150015"></td>
+            <td id="WS150016"></td>
+            <td id="WS150017"></td>
+            <td id="WS150018"></td>
+            <td id="WS150019"></td>
+            <td id="WS150020"></td>
+          </tr>
+          <tr>
+            <td>deg°</td>
+            <td id="WD150008"></td>
+            <td id="WD150010"></td>
+            <td id="WD150011"></td>
+            <td id="WD150012"></td>
+            <td id="WD150013"></td>
+            <td id="WD150014"></td>
+            <td id="WD150015"></td>
+            <td id="WD150016"></td>
+            <td id="WD150017"></td>
+            <td id="WD150018"></td>
+            <td id="WD150019"></td>
+            <td id="WD150020"></td>
+          </tr>
+          <tr class="tRow1">
+            <td id="1900m" rowspan="2">1900m</td>
+            <td>m/s</td>
+            <td id="WS190008"></td>
+            <td id="WS190010"></td>
+            <td id="WS190011"></td>
+            <td id="WS190012"></td>
+            <td id="WS190013"></td>
+            <td id="WS190014"></td>
+            <td id="WS190015"></td>
+            <td id="WS190016"></td>
+            <td id="WS190017"></td>
+            <td id="WS190018"></td>
+            <td id="WS190019"></td>
+            <td id="WS190020"></td>
+          </tr>
+          <tr>
+            <td>deg°</td>
+            <td id="WD190008"></td>
+            <td id="WD190010"></td>
+            <td id="WD190011"></td>
+            <td id="WD190012"></td>
+            <td id="WD190013"></td>
+            <td id="WD190014"></td>
+            <td id="WD190015"></td>
+            <td id="WD190016"></td>
+            <td id="WD190017"></td>
+            <td id="WD190018"></td>
+            <td id="WD190019"></td>
+            <td id="WD190020"></td>
+          </tr>
+          <tr class="lCloudsTr">
+            <td id="lCloudT">LClouds</td>
+            <td>%</td>
+            <td id="lClouds09"></td>
+            <td id="lClouds10"></td>
+            <td id="lClouds11"></td>
+            <td id="lClouds12"></td>
+            <td id="lClouds13"></td>
+            <td id="lClouds14"></td>
+            <td id="lClouds15"></td>
+            <td id="lClouds16"></td>
+            <td id="lClouds17"></td>
+            <td id="lClouds18"></td>
+            <td id="lClouds19"></td>
+            <td id="lClouds20"></td>
+          </tr>
+          <tr class="mCloudsTr" >
+            <td id="mCloudT">MClouds</td>
+            <td>%</td>
+            <td id="mClouds09"></td>
+            <td id="mClouds10"></td>
+            <td id="mClouds11"></td>
+            <td id="mClouds12"></td>
+            <td id="mClouds13"></td>
+            <td id="mClouds14"></td>
+            <td id="mClouds15"></td>
+            <td id="mClouds16"></td>
+            <td id="mClouds17"></td>
+            <td id="mClouds18"></td>
+            <td id="mClouds19"></td>
+            <td id="mClouds20"></td>
+          </tr>
+          <tr class="hCloudsTr">
+            <td id="hCloudT">HClouds</td>
+            <td>%</td>
+            <td id="hClouds09"></td>
+            <td id="hClouds10"></td>
+            <td id="hClouds11"></td>
+            <td id="hClouds12"></td>
+            <td id="hClouds13"></td>
+            <td id="hClouds14"></td>
+            <td id="hClouds15"></td>
+            <td id="hClouds16"></td>
+            <td id="hClouds17"></td>
+            <td id="hClouds18"></td>
+            <td id="hClouds19"></td>
+            <td id="hClouds20"></td>
+          </tr>
+        </tbody>
+        </table>
+        
+        <table id="table2" style="display: table;">
+          <colgroup>
+            <col>
+            <col>
+            <col>
+            <col class="highlight">
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+          </colgroup>
+
+          <thead>
+            <tr>
+              <th class="tHeader" colspan="14">Tommorow</th>
+              </tr>
+              <tr>
+            <tr>
+              <th>Alt.</th>
+              <th></th>
+              <th class="col1">09:00</th>
+              <th>10:00</th>
+              <th>11:00</th>
+              <th>12:00</th>
+              <th>13:00</th>
+              <th>14:00</th>
+              <th>15:00</th>
+              <th>16:00</th>
+              <th>17:00</th>
+              <th>18:00</th>
+              <th>19:00</th>
+              <th>20:00</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tRow1">
+              <td class="doubledCell" id="500m2" rowspan="2">500m</td>
+              <td>m/s</td>
+              <td id="WS50033"></td>              
+              <td id="WS50034"></td>
+              <td id="WS50035"></td>
+              <td id="WS50036"></td>
+              <td id="WS50037"></td>
+              <td id="WS50038"></td>
+              <td id="WS50039"></td>
+              <td id="WS50040"></td>
+              <td id="WS50041"></td>
+              <td id="WS50042"></td>
+              <td id="WS50043"></td>
+              <td id="WS50044"></td>
+              
+            </tr>
+            <tr>
+              <td>deg°</td>
+              <td id="WD50033"></td>
+              <td id="WD50034"></td>
+              <td id="WD50035"></td>
+              <td id="WD50036"></td>
+              <td id="WD50037"></td>
+              <td id="WD50038"></td>
+              <td id="WD50039"></td>
+              <td id="WD50040"></td>
+              <td id="WD50041"></td>
+              <td id="WD50042"></td>
+              <td id="WD50043"></td>
+              <td id="WD50044"></td>
+            </tr>
+            <tr class="tRow1">
+              <td class="doubledCell" id="800m2" rowspan="2">800m</td>
+              <td>m/s</td>
+              <td id="WS80033"></td>
+              <td id="WS80034"></td>
+              <td id="WS80035"></td>
+              <td id="WS80036"></td>
+              <td id="WS80037"></td>
+              <td id="WS80038"></td>
+              <td id="WS80039"></td>
+              <td id="WS80040"></td>
+              <td id="WS80041"></td>
+              <td id="WS80042"></td>
+              <td id="WS80043"></td>
+              <td id="WS80044"></td>
+            </tr>
+            <tr>
+              <td>deg°</td>
+              <td id="WD80033"></td>
+              <td id="WD80034"></td>
+              <td id="WD80035"></td>
+              <td id="WD80036"></td>
+              <td id="WD80037"></td>
+              <td id="WD80038"></td>
+              <td id="WD80039"></td>
+              <td id="WD80040"></td>
+              <td id="WD80041"></td>
+              <td id="WD80042"></td>
+              <td id="WD80043"></td>
+              <td id="WD80044"></td>
+            </tr>
+            <tr class="tRow1">
+              <td class="doubledCell" id="1000m2" rowspan="2">1000m</td>
+              <td>m/s</td>
+              <td id="WS100033"></td>
+              <td id="WS100034"></td>
+              <td id="WS100035"></td>
+              <td id="WS100036"></td>
+              <td id="WS100037"></td>
+              <td id="WS100038"></td>
+              <td id="WS100039"></td>
+              <td id="WS100040"></td>
+              <td id="WS100041"></td>
+              <td id="WS100042"></td>
+              <td id="WS100043"></td>
+              <td id="WS100044"></td>
+            </tr>
+            <tr>
+              <td>deg°</td>
+              <td id="WD100033"></td>
+              <td id="WD100034"></td>
+              <td id="WD100035"></td>
+              <td id="WD100036"></td>
+              <td id="WD100037"></td>
+              <td id="WD100038"></td>
+              <td id="WD100039"></td>
+              <td id="WD100040"></td>
+              <td id="WD100041"></td>
+              <td id="WD100042"></td>
+              <td id="WD100043"></td>
+              <td id="WD100044"></td>
+            </tr>
+            <tr class="tRow1">
+              <td class="doubledCell" id="1500m2" rowspan="2">1500m</td>
+              <td>m/s</td>
+              <td id="WS150033"></td>
+              <td id="WS150034"></td>
+              <td id="WS150035"></td>
+              <td id="WS150036"></td>
+              <td id="WS150037"></td>
+              <td id="WS150038"></td>
+              <td id="WS150039"></td>
+              <td id="WS150040"></td>
+              <td id="WS150041"></td>
+              <td id="WS150042"></td>
+              <td id="WS150043"></td>
+              <td id="WS150044"></td>
+            </tr>
+            <tr>
+              <td>deg°</td>
+              <td id="WD150033"></td>
+              <td id="WD150034"></td>
+              <td id="WD150035"></td>
+              <td id="WD150036"></td>
+              <td id="WD150037"></td>
+              <td id="WD150038"></td>
+              <td id="WD150039"></td>
+              <td id="WD150040"></td>
+              <td id="WD150041"></td>
+              <td id="WD150042"></td>
+              <td id="WD150043"></td>
+              <td id="WD150044"></td>
+            </tr>
+            <tr class="tRow1">
+              <td class="doubledCell" id="1900m2" rowspan="2">1900m</td>
+              <td>m/s</td>
+              <td id="WS190033"></td>
+              <td id="WS190034"></td>
+              <td id="WS190035"></td>
+              <td id="WS190036"></td>
+              <td id="WS190037"></td>
+              <td id="WS190038"></td>
+              <td id="WS190039"></td>
+              <td id="WS190040"></td>
+              <td id="WS190041"></td>
+              <td id="WS190042"></td>
+              <td id="WS190043"></td>
+              <td id="WS190044"></td>
+            </tr>
+            <tr>
+              <td>deg°</td>
+              <td id="WD190033"></td>
+              <td id="WD190034"></td>
+              <td id="WD190035"></td>
+              <td id="WD190036"></td>
+              <td id="WD190037"></td>
+              <td id="WD190038"></td>
+              <td id="WD190039"></td>
+              <td id="WD190040"></td>
+              <td id="WD190041"></td>
+              <td id="WD190042"></td>
+              <td id="WD190043"></td>
+              <td id="WD190044"></td>
+            </tr>
+            <tr class="lCloudsTr">
+              <td id="lCloudT">LClouds</td>
+              <td>%</td>
+              <td id="lClouds33"></td>
+              <td id="lClouds34"></td>
+              <td id="lClouds35"></td>
+              <td id="lClouds36"></td>
+              <td id="lClouds37"></td>
+              <td id="lClouds38"></td>
+              <td id="lClouds39"></td>
+              <td id="lClouds40"></td>
+              <td id="lClouds41"></td>
+              <td id="lClouds42"></td>
+              <td id="lClouds43"></td>
+              <td id="lClouds44"></td>
+            </tr>
+            <tr class="mCloudsTr">
+              <td id="mCloudT">MClouds</td>
+              <td>%</td>
+              <td id="mClouds33"></td>
+              <td id="mClouds34"></td>
+              <td id="mClouds35"></td>
+              <td id="mClouds36"></td>
+              <td id="mClouds37"></td>
+              <td id="mClouds38"></td>
+              <td id="mClouds39"></td>
+              <td id="mClouds40"></td>
+              <td id="mClouds41"></td>
+              <td id="mClouds42"></td>
+              <td id="mClouds43"></td>
+              <td id="mClouds44"></td>
+            </tr>
+            <tr class="hCloudsTr">
+              <td id="hCloudT">HClouds</td>
+              <td>%</td>
+              <td id="hClouds33"></td>
+              <td id="hClouds34"></td>
+              <td id="hClouds35"></td>
+              <td id="hClouds36"></td>
+              <td id="hClouds37"></td>
+              <td id="hClouds38"></td>
+              <td id="hClouds39"></td>
+              <td id="hClouds40"></td>
+              <td id="hClouds41"></td>
+              <td id="hClouds42"></td>
+              <td id="hClouds43"></td>
+              <td id="hClouds44"></td>
+            </tr>
+          </tbody>
+          </table>
+         
+        <button id="tableSwitchN"></button>
+    </div>
+    
+    <div class="weatherInfo">
+      <p class="sunriseP">Sunrise: <span id="sunrise"></span></p>
+      <p class="sunsetP">Sunset: <span id="sunset"></span></p>
+      <!--<P>Low clouds: <span id="lClouds"></span>%</P>
+      <p>Mid clouds: <span id="mClouds"></span>%</p>
+      <p>High clouds: <span id="hClouds"></span>%</p> -->
+    </div>
+           
+    </div>               
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>    
+    <script src="./homepage.js"></script>
+</body>
